@@ -1,0 +1,60 @@
+.Home {
+   
+    .acceuil {
+
+        background-color: var(--mainColor);
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .home-contain {
+        margin: 0 ;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        padding-top: 100px;
+    }
+    .info {
+        
+
+        h1 {
+            margin:25px 0;
+            font-size: 2.5rem;
+            padding: 10px;
+            &:hover {
+
+                animation: test 700ms ease-in-out 300ms forwards ;
+            }
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+    }
+    img {
+        height: 400px;
+        width: 400px;
+    }
+}
+@keyframes test {
+    0% {
+        transform: scale(0.5);
+    } 50% {
+       transform: scale(1.2); 
+    } 70% {
+        transform: scale(0.8);
+    } 100% { 
+        transform: scale(1);
+    }
+}
+span {
+    font-size: 3rem;
+    transition: 200ms;
+    
+    &:hover {
+        animation: test 700ms ease-in-out 300ms forwards;
+    }
+}
