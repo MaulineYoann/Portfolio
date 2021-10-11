@@ -4,6 +4,7 @@ import './Home.scss'
 import photo from '../assets/photo.png'
 import Button from '../components/Button'
 import About from './About'
+import Skillz from '../components/Skillz'
 
 const Home = () => {
     return (
@@ -11,8 +12,9 @@ const Home = () => {
             <div className="acceuil">
             <div className='home-contain'>
             <div className="info">
+
                 {/* <span>b</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span> */}
-                <h1>Bonjour,<br/> Je suis Yoann mauline</h1>
+                <h1>Bonjour,<br/> Je suis Yoann Mauline</h1>
                 <p>développeur web fullstack React/Node</p>
                 <section>
                     <Button title='Projets'/>
@@ -23,6 +25,7 @@ const Home = () => {
             </div>
             </div>
             <About />
+            <Skillz />
         </section>
     )
 }

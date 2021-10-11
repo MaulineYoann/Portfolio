@@ -1,13 +1,14 @@
 .About {
 
-    padding: 50px;
+    padding: 70px;
     background-color: var(--secondColor);
-    h2 {
+    .title {
         text-align: center;
         font-size: 2rem;
     }
     .about-text {
         margin-top: 50px;
+        padding-bottom: 50px;
         // border: 1px solid red;
         // border: 2px solid red;
         .about-question {

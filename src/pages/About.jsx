@@ -4,7 +4,7 @@ import './About.scss'
 const About = () => {
     return (
         <section className='About'>
-            <h2 > À Propos</h2>
+            <h2 className='title'> À Propos</h2>
             <div className="about-text">
                 <p className='about-question'>Qui-suis-je ?</p>
                 <p className='text'>Passionné par le monde du développement informatique, c'est tout naturellement que je me lance une reconversion professionnelle. D'abord en autodidacte où  que je commence a me familiarisé avec 
