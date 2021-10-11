@@ -6,9 +6,9 @@ const About = () => {
         <section className='About'>
             <h2 > À Propos</h2>
             <div className="about-text">
-                <p>Passionné par le développement web, c'est en autodidacte que je commence a me familiarisé avec 
-                les languages du web Je réalise alors des mini projets pour m'entrainer avant de rejoindre la formation développeur web/web mobile de la Wild Code School ou 
-                j'y ai appris les languages tels que. JavaScript, React.js, node.js, Express.js et MySql.
+                <p className='about-question'>Qui-suis-je ?</p>
+                <p className='text'>Passionné par le monde du développement informatique, c'est tout naturellement que je me lance une reconversion professionnelle. D'abord en autodidacte où  que je commence a me familiarisé avec 
+                HTML/CSS et Javascript, Je réalise alors quelques mini projets pour m'entrainer avant de rejoindre la formation développeur web/web mobile de la Wild Code School ou j'y ai appris a communiquer et travailler en équipe, me familiariser avec des outils de développeur tels que Git et Github. ainsi que l'apprentissage des langages React.js, nodejs/Express.js et MySql
                 </p>
             </div>
         </section>
