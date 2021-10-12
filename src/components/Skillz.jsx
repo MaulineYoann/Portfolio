@@ -6,14 +6,14 @@ import './Skillz.scss'
 
 const Skillz = () => {
 
-    const hardskill = ['Html', 'Css', 'Javascript', 'React.js', 'node.js', 'Express.js', 'MySql', 'Git', 'Github', 'Postman', 'Sass', 'TypeScript', 'API Rest' ]
+    const hardskill = ['Html', 'Css', 'Javascript', 'React.js', 'node.js', 'Express.js', 'MySql', 'Git', 'Github', 'Postman', 'Sass', 'API Rest' ]
 
     const softSkill = ['Motivé','Organisé', 'Communication',"Esprit d'équipe", "Soif d'apprentissage" ];
 
-    const learning = [, 'Three.js', 'D3.js', 'Php', 'Mongo DB' ];
+    const learning = ['TypeScript', 'Three.js', 'D3.js', 'Php', 'Mongo DB' ];
 
     return (
-        <section className='skillz'>
+        <section className='skillz' id='skillz'>
 
             <h2 className='title'>Compétences</h2>
             <aside className='skill-contain'>
