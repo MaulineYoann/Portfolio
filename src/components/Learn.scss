@@ -1,18 +1,17 @@
-.SoftSkill {
-    // background-color: #184e77;
-    background-image: linear-gradient(to left, #24263b, #272f4a, #273959, #234368, #184e77);
+.learn {
+    
+    background-image: linear-gradient(to left, #24263b, #231d2b, #1d151d, #140c10, #000000);
     
     width: 300px;
     height: 40px;
-    // padding:15px;
     position: relative;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    .award {
-        background-color: #184E77;
+    .code {
+        background-color: #000;
         height: 40px;
         width: 30px;
     }

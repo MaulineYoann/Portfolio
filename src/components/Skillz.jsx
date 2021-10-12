@@ -1,5 +1,6 @@
 import SkillList from './SkillList';
 import SoftSkill from './SoftSkill';
+import Learn from './Learn';
 import React from 'react'
 import './Skillz.scss'
 
@@ -9,7 +10,7 @@ const Skillz = () => {
 
     const softSkill = ['Motivé','Organisé', 'Communication',"Esprit d'équipe", "Soif d'apprentissage" ];
 
-    const learn = [, 'Three.js', 'D3.js', 'Php', 'Mongo DB' ];
+    const learning = [, 'Three.js', 'D3.js', 'Php', 'Mongo DB' ];
 
     return (
         <section className='skillz'>
@@ -26,7 +27,7 @@ const Skillz = () => {
             </aside>
 
             <h2 className='title'>Soft Skill</h2>
-            <aside className='soft-skill'>
+            <aside className='skill-contain'>
 
                 {softSkill.map((soft, index) => (
                     <div key={index}>
@@ -34,6 +35,14 @@ const Skillz = () => {
                     </div>
                 ))}
 
+            </aside>
+            <h2 className="title">En cours d'apprentisage </h2>
+            <aside className='skill-contain'>
+            {learning.map((learn, index) => (
+                <div key={index}>
+                    <Learn learn={learn}/>
+                </div>
+            ))}
             </aside>
             
         </section>
