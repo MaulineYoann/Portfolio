@@ -5,6 +5,7 @@ import photo from '../assets/photo.png'
 import Button from '../components/Button'
 import About from './About'
 import Skillz from '../components/Skillz'
+import Project from '../components/Project'
 
 const Home = () => {
     return (
@@ -15,7 +16,7 @@ const Home = () => {
 
                 {/* <span>b</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span> */}
                 <h1>Bonjour,<br/> Je suis Yoann Mauline</h1>
-                <p>développeur web fullstack React/Node</p>
+                <p>Développeur web React/Node</p>
                 <section>
                     <Button title='Projets'/>
                     <Button title='Contact'/>
@@ -26,6 +27,7 @@ const Home = () => {
             </div>
             <About />
             <Skillz />
+            <Project />
         </section>
     )
 }
