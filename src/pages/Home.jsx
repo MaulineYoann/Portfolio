@@ -6,20 +6,34 @@ import Button from '../components/Button'
 import About from './About'
 import Skillz from '../components/Skillz'
 import Project from '../components/Project'
+import Contact from './Contact'
+import {FaLinkedin} from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+
 
 const Home = () => {
+    const projet = '/#projets';
+    const contact = '/#contact';
+
+    // gsap.registerPlugin(ScrollTrigger);
+
+    
     return (
         <section className='Home'>
             <div className="acceuil">
             <div className='home-contain'>
             <div className="info">
 
-                {/* <span>b</span><span>o</span><span>n</span><span>j</span><span>o</span><span>u</span><span>r</span> */}
                 <h1>Bonjour,<br/> Je suis Yoann Mauline</h1>
-                <p>Développeur web React/Node</p>
+                <p>Développeur web junior React/Node</p>
                 <section>
-                    <Button title='Projets'/>
-                    <Button title='Contact'/>
+                    <div className="section-button">
+                    <Button title='Projets' link={projet}/>
+                    <Button title='Contact' link={contact}/>
+                    </div>
+                    
+                   <a href="https://www.linkedin.com/in/yoann-mauline/" target="_blank" rel="noopener noreferrer"><FaLinkedin className='icons'/></a> 
+                   <a href="https://github.com/MaulineYoann" target="_blank" rel="noopener noreferrer"><FaGithub className='icons'/></a> 
                 </section>
             </div>
             <img src={photo} alt="photo" />
@@ -28,6 +42,7 @@ const Home = () => {
             <About />
             <Skillz />
             <Project />
+            <Contact />
         </section>
     )
 }

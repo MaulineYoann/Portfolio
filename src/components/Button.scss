@@ -1,4 +1,4 @@
-button {
+.button {
     margin: 30px 10px 30px 0;
     padding: 10px;
     border-radius: 10px;
@@ -10,6 +10,8 @@ button {
     cursor: pointer;
     transition: 300ms;
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
     &:hover {
         background-color: #d00000;
     }

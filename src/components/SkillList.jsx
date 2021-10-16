@@ -3,7 +3,8 @@ import './SkillList.scss'
 import { FaCheck } from 'react-icons/fa';
 
 
-const SkillList = ({skill}) => {
+const SkillList = ({ skill }) => {
+   
     return (
         <div className='skillList'>
         <FaCheck className='check'/>

@@ -1,0 +1,48 @@
+.Contact {
+    background-color: var(--mainColor);
+    box-sizing: border-box;
+    .title {
+        text-align: center;
+        padding: 70px;
+        font-size: 2rem;
+    }
+    p {
+        text-align: center;
+        font-size: 1.6rem;
+        
+    }
+    
+    .contain-contact {
+        margin-top: 70px;
+        display: flex;
+        height: 300px;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        
+          .contain-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #f1f1f1;
+        border-radius: 10px;
+        height: 100px;
+        width: 330px;
+        margin: 30px;
+        
+    }
+    
+    .liens {
+        font-size: 1.7rem; 
+    }  
+        
+        
+    }
+    a {
+        text-decoration: none;
+    }
+    
+    
+    
+}

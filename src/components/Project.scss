@@ -5,7 +5,7 @@
 
         padding: 70px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .contain-project {
         
@@ -29,20 +29,23 @@
             .scale-image {
                 width: 400px;
                 overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 3px 3px 10px  #fff;
             }
 
             img {
+                border-radius: 10px;
                 height: 320px;
                 // padding: 10px;
                 width: 400px;
                 transition: 400ms;
 
                 &:hover {
-                    transform: scale(1.2);
+                    transform: scale(1.2)rotate(10deg);
                 }
             }
             p {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
                 width: 300px;
                 padding: 15px;
                 text-align: center;

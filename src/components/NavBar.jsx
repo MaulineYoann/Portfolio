@@ -10,10 +10,9 @@ export const NavBar = () => {
                 <div>LOGO</div>
                 <ul className="contain-nav">
                     <HashLink to="/#about" className="contain-item">À Propos</HashLink>
-                    
                     <HashLink to="/#skillz" className="contain-item">Compétences</HashLink>
                     <HashLink to="/#projets" className="contain-item">Réalisation</HashLink>
-                    <HashLink className="contain-item">Contact</HashLink>      
+                    <HashLink to="/#contact" className="contain-item">Contact</HashLink>      
                 </ul>
             </div>
         </nav>

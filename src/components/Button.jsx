@@ -1,11 +1,12 @@
 import React from 'react'
 import './Button.scss'
+import { HashLink } from 'react-router-hash-link'
 
-const Button = ({title}) => {
+const Button = ({title, link}) => {
     return (
-        <button className="button" >
+        <HashLink to={link} className="button" >
             {title}
-        </button>
+        </HashLink>
     )
 }
 

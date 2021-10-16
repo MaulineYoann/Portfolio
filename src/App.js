@@ -6,10 +6,13 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skillz from './components/Skillz';
 import Project from './components/Project';
-
+import Contact from './pages/Contact';
+// import Footer from './pages/Footer';
 
 
 function App() {
+
+  
   return (
     <div className="App">
      <Router>
@@ -19,8 +22,9 @@ function App() {
          <Route path="/about" component={About} />  
          <Route path="/skills" component={Skillz} />
          <Route path="/projets" component={Project} />
+         <Route path="/contact" component={Contact} />
        </Switch>
-       {/* <Footer /> */}
+       {/* <Footer/> */}
      </Router>
     </div>
   );
