@@ -1,6 +1,5 @@
 .Contact {
     background-color: var(--mainColor);
-    box-sizing: border-box;
     .title {
         text-align: center;
         padding: 70px;
@@ -15,12 +14,12 @@
     .contain-contact {
         margin-top: 70px;
         display: flex;
-        height: 300px;
+        height: auto;
         flex-flow: row wrap;
         justify-content: center;
         
         
-          .contain-icons {
+        .contain-icons {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,9 +31,14 @@
         margin: 30px;
         
     }
+    .icons {
+        text-align: center;
+    }
     
     .liens {
         font-size: 1.7rem; 
+        text-align: center;
+        padding-top:10px ;
     }  
         
         

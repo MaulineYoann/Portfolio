@@ -8,6 +8,10 @@
     --thirdColor: #d10000;
     --secondFont: 'Rubik', sans-serif;
 }
+.title::first-letter {
+  color: #d10000;
+  font-size: 2.3rem;
+}
 
 * {
     margin: 0;
@@ -16,6 +20,10 @@
     box-sizing: border-box;
     color: #fff;
 }
+html, body { 
+  height: 100%;
+}
+
 body::-webkit-scrollbar {
     width: 12px; /* width of the entire scrollbar */
   }

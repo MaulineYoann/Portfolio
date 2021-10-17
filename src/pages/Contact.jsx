@@ -10,7 +10,7 @@ const Contact = () => {
     return (
       <section className='Contact' id='contact'>
         <h2 className='title'>Contact</h2>
-        <p>Si vous désirez plus d'information je vous invite a me contacter'</p>
+        <p className='contact-info'>Si vous désirez plus d'information je vous invite a me contacter</p>
         {/* <FaPhone /> */}
         <aside className='contain-contact'>
           <a href='mailto:maulineyoann@gmail.com'>
@@ -25,7 +25,8 @@ const Contact = () => {
             rel='noopener noreferrer'
           >
             <div className='contain-icons'>
-              <FaLinkedin className='icons' /> <p className='liens'>Linkedin</p>
+                        <FaLinkedin className='icons' />
+                        <p className='liens'>Linkedin</p>
             </div>
           </a>
           <a

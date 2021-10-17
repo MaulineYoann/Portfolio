@@ -3,26 +3,28 @@
     .acceuil {
 
         background-color: var(--mainColor);
-        height: 500px;
+        // height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
         
     }
     .home-contain {
-        margin: 0 ;
+        height: auto;
         display: flex;
+        
         align-items: center;
-        gap: 100px;
+        justify-content: space-between;
+        // gap: 200px;
         padding-top: 100px;
+        // border: 1px solid white;
     }
     .info {
-        
-
+        margin-right: 200px ;
         h1 {
-            margin:25px 0;
+            // margin:25px ;
             font-size: 2.5rem;
-            padding: 10px;
+            padding-bottom: 20px;
             
         }
 
@@ -56,11 +58,22 @@
         transform: scale(1);
     }
 }
-span {
-    font-size: 3rem;
-    transition: 200ms;
-    
-    &:hover {
-        animation: test 700ms ease-in-out 300ms forwards;
+
+@media only screen and (max-width: 972px) {
+    .info {
+        margin: 0 0 100px 0;
     }
+    .home-contain {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        // padding-top: 50px;
+        
+    }
+    
+}
+.home-icons {
+    color: #d10000;
 }

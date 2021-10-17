@@ -11,6 +11,7 @@ import {FaLinkedin} from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 
 
+
 const Home = () => {
     const projet = '/#projets';
     const contact = '/#contact';
@@ -19,32 +20,47 @@ const Home = () => {
 
     
     return (
-        <section className='Home'>
-            <div className="acceuil">
-            <div className='home-contain'>
-            <div className="info">
+      <section className='Home'>
+        <div className='acceuil'>
+          <div className='home-contain'>
+            <div className='info'>
+              <h1>
+                Bonjour,
+                <br /> Je suis Yoann Mauline
+              </h1>
+              <p>Développeur web React/Node</p>
+              <section>
+                <div className='section-button'>
+                  <Button title='Projets' link={projet} />
+                  <Button title='Contact' link={contact} />
+                </div>
 
-                <h1>Bonjour,<br/> Je suis Yoann Mauline</h1>
-                <p>Développeur web junior React/Node</p>
-                <section>
-                    <div className="section-button">
-                    <Button title='Projets' link={projet}/>
-                    <Button title='Contact' link={contact}/>
-                    </div>
-                    
-                   <a href="https://www.linkedin.com/in/yoann-mauline/" target="_blank" rel="noopener noreferrer"><FaLinkedin className='icons'/></a> 
-                   <a href="https://github.com/MaulineYoann" target="_blank" rel="noopener noreferrer"><FaGithub className='icons'/></a> 
-                </section>
+                <a className='home-icons' 
+                  href='https://www.linkedin.com/in/yoann-mauline/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FaLinkedin className='icons' />
+                </a>
+                <a className='home-icons'
+                  href='https://github.com/MaulineYoann'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FaGithub className='icons' />
+                </a>
+              </section>
             </div>
-            <img src={photo} alt="photo" />
-            </div>
-            </div>
-            <About />
-            <Skillz />
-            <Project />
-            <Contact />
-        </section>
-    )
+            <img src={photo} alt='photo' />
+          </div>
+        </div>
+        <About />
+        <Skillz />
+        <Project />
+        <Contact />
+       
+      </section>
+    );
 }
 
 export default Home

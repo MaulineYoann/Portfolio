@@ -25,9 +25,33 @@
         color: #fff;
         transition: 300ms;
         font-size: 1.5rem;
+        position: relative;
+        &::first-letter {
+            color: #d10000;
+            font-size: 1.8rem;       
+         }
         &:hover {
             color:#d10000;
+            
+        }
+        &::before {
+            content: "";
+            transition: 300ms;
+            position: absolute;
+            bottom: -10px;
+            background-color: #d10000;
+            width: 100%;
+            height: 3px;
+            transform: scale(0);
+             
+        }
+        &:hover::before {
+            transform: scale(1);
         }
     }
   }
-}
+  .photo-profile {
+      height: 100px;
+      width: 100px;
+  }
+ }
