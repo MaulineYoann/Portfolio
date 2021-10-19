@@ -1,31 +1,30 @@
 .Home {
-   
+//    position: relative;
+//    top: 100px;
     .acceuil {
 
         background-color: var(--mainColor);
-        // height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
         
+        
     }
     .home-contain {
         height: auto;
+        width: auto;
         display: flex;
-        
         align-items: center;
         justify-content: space-between;
-        // gap: 200px;
         padding-top: 100px;
-        // border: 1px solid white;
+        
     }
     .info {
         margin-right: 200px ;
         h1 {
-            // margin:25px ;
-            font-size: 2.5rem;
-            padding-bottom: 20px;
             
+            font-size: 2.5rem;
+            padding-bottom: 20px;  
         }
 
         p {
@@ -68,12 +67,23 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0px;
-        // padding-top: 50px;
-        
+        border: 2px solid pink;
+       
+    } 
+}
+@media only screen and (max-width: 375px) {
+    .info {
+        margin-right: 0;
     }
-    
+    img {
+        height: 200px;
+        width: 200px;
+    }
 }
 .home-icons {
     color: #d10000;
+}
+footer {
+    background-color: rgb(31, 34, 53);
+
 }

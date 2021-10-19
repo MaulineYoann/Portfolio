@@ -58,7 +58,9 @@ const Home = () => {
         <Skillz />
         <Project />
         <Contact />
-       
+        <footer>
+          <h1 className='title'>footer</h1>
+       </footer>
       </section>
     );
 }
