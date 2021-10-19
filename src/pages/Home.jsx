@@ -51,16 +51,13 @@ const Home = () => {
                 </a>
               </section>
             </div>
-            <img src={photo} alt='photo' />
+            <img src={photo} alt='photo' className='profile'/>
           </div>
         </div>
         <About />
         <Skillz />
         <Project />
         <Contact />
-        <footer>
-          <h1 className='title'>footer</h1>
-       </footer>
       </section>
     );
 }

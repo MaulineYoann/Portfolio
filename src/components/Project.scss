@@ -27,6 +27,7 @@
                 padding: 15px;
             }
             .scale-image {
+                height: 320px;
                 max-width: 400px;
                 overflow: hidden;
                 border-radius: 10px;
@@ -35,10 +36,9 @@
 
             img {
                 border-radius: 10px;
-                height: 320px;
+                height:100%;
                 // padding: 10px;
-                
-                width: auto;
+                width: 100%;
                 transition: 400ms;
 
                 &:hover {
@@ -59,6 +59,9 @@
     .scale-image{
         width: 300px;
         height: 200px;
+    }
+    img{
+        width: 100%;
     }
 }
 }
