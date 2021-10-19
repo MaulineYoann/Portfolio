@@ -55,4 +55,10 @@
             }
         }
     }
+    @media screen and(max-width: 524px) {
+    .scale-image{
+        width: 300px;
+        height: 200px;
+    }
+}
 }

@@ -6,14 +6,14 @@ import './NavBar.scss'
 import ym from "../assets/YM.png"
 
 export const NavBar = () => {
-    const [burger, setBurger] = useState(false);
+    // const [burger, setBurger] = useState(false);
 
-    const handleChange = () => {
-        setBurger(!burger)
-    }
-    console.log(burger)
+    // const handleChange = () => {
+    //     setBurger(!burger)
+    // }
+    // console.log(burger)
     return (
-      <nav className={`NavBar ${burger ? 'show-nav' : 'hide-nav'}`}>
+      <nav className="NavBar">
         <div className='contain'>
           <img src={ym} className='photo-profile'></img>
           <ul className='contain-nav'>
