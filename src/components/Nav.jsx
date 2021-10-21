@@ -3,45 +3,38 @@ import './Nav.css';
 import { useState } from 'react';
 
 function Nav() {
-  const [showLinks, setShowLinks] = useState(false);
+  
+  const [nav, setNav] = useState(false);
 
-  const handleShowLinks = () => {
-    setShowLinks(!showLinks);
-  };
+  const showNav = () => setNav(!nav)
+
   return (
-    <div className={`navbar ${showLinks ? 'show-nav' : 'hide-nav'}`}>
-      <div className='navbar_logo'></div>
-      <ul className='navbar_links'>
-        <li className='navbar_item slideInDown-1'>
-          <a href to='/presentation' className='navbar_link'>
-            Présentation
-          </a>
+    <nav
+      className={nav ? 'navbar dark-mode show-nav' : 'navbar dark-mode'}
+      role='navigation'
+    >
+      <div className='navbar__logo'>Logo</div>
+      <ul className='navbar__links'>
+        <li className='navbar__link first'>
+          <a href='#'>Accueil</a>
         </li>
-        <li className='navbar_item slideInDown-2'>
-          <a href='/etude' className='navbar_link'>
-            Etudes
-          </a>
+        <li className='navbar__link second'>
+          <a href='#'>Services</a>
         </li>
-        <li className='navbar_item slideInDown-3'>
-          <a href='/experience' className='navbar_link'>
-            Expérience
-          </a>
+        <li className='navbar__link third'>
+          <a href='#'>Missions</a>
         </li>
-        <li className='navbar_item slideInDown-4'>
-          <a href='/competence' className='navbar_link'>
-            Compétences
-          </a>
+        <li className='navbar__link four'>
+          <a href='#'>Portfolio</a>
         </li>
-        <li className='navbar_item slideInDown-5'>
-          <a href='/motivation' className='navbar_link'>
-            Motivation
-          </a>
+        <li className='navbar__link fifth'>
+          <a href='#'>Contact</a>
         </li>
       </ul>
-      <button className='navbar_burger' onClick={handleShowLinks}>
-        <span className='burger-bar'></span>
+      <button className='burger' onClick={showNav}>
+        <span className='bar'></span>
       </button>
-    </div>
+    </nav>
   );
 }
 

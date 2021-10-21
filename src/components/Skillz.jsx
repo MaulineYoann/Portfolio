@@ -6,8 +6,7 @@ import './Skillz.scss'
 
 const Skillz = () => {
     
-   
-    const hardskill = ['Html', 'Css', 'Javascript', 'React.js', 'node.js', 'Express.js', 'MySql', 'Git', 'Github', 'Postman', 'Sass', 'API Rest', 'Figma' ]
+    const hardskill = ['Html', 'Css', 'Javascript', 'React.js', 'node.js', 'Express.js', 'MySql', 'Git', 'Github', 'Postman', 'Sass', 'API Rest', 'Responsive' ]
     const softSkill = ['Motivé','Organisé', 'Communication',"Esprit d'équipe", "Soif d'apprentissage", 'Autonomie', "Méthode agile" ];
     const learning = ['TypeScript', 'Three.js', 'D3.js', 'Php', 'Mongo DB' ];
 
