@@ -24,29 +24,42 @@ body {
   font-size:var(--font-size);
   font-family: 'Poppins', sans-serif;
 }
-.main-content {
+/* .main-content {
   padding:1rem;
-}
+} */
 /* Navbar */
 .navbar {  
   display:flex;
   align-items:center; 
-  justify-content:space-between;   
-  padding:10px;
+  justify-content:space-between;  
+  padding:0 10%;
   font-size:1.1rem;
-  background:var(--navbar-bg-color);
-  color:var(--navbar-color);
+  background:var(--secondColor);
+  color: #FFF;
+  height: 100px;
 }
 .navbar__links { 
   display:flex;  
 }
 .navbar__link { 
   padding:0 10px;
+  transition: 300ms;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 0 20px;
 }
-.navbar__link > a { 
-  color:var(--navbar-color);
+.navbar__link::first-letter {
+  color: #d10000;
+  font-size: 2rem;   
+}
+
+.navbar__link > .contain-item { 
   text-decoration:none;
 }
+/* .navbar__link > .contain-item::first-letter {
+  color: #d10000;
+  font-size: 1.8rem;
+} */
 .burger {
   display:none;
 }
@@ -60,9 +73,9 @@ body {
     width:0;
     height:calc(100vh - 65px);  
     position:absolute;
-    top:65px;
+    top:100px;
     right:0;     
-    background:var(--navbar-bg-color);     
+    background:var(--secondColor);     
     transform: translateX(110%);
     transition: all .5s ease-in-out;
   }
@@ -79,14 +92,14 @@ body {
   .show-nav .navbar__link  {        
     transform: translateX(0);    
   }   
-  .navbar__link > a {
+  .navbar__link > .contain-item {
     display:block;
     padding:1rem;
     font-size:1.6rem;
     color:var(--navbar-color);  
     transition: all .4s ease-in-out;
   }
-  .navbar__link > a:hover {
+  .navbar__link > .contain-item:hover {
     padding-left:2rem;
     letter-spacing:5px;
   }
@@ -157,16 +170,26 @@ body {
 
 /*  Medium device - Bonus */
 @media screen and (min-width:768px) {
-  .navbar__link > a::after {
+  .navbar__link > .contain-item::after {
     display:block;
     content:"";
     width:0;
-    height:1px;
-    background:var(--navbar-color);
+    height:2px;
+    background: #d10000;
     transition:width .4s;
+    position: relative;
+    top: 5px;
   }
-  .navbar__link:hover > a::after {
+  .navbar__link:hover > .contain-item::after {
     width:100%;
   }
 }
+.photo-profile {
+      height: 100px;
+      width: 100px;
+  }
+  .contain-item::first-letter {
+    color: #d10000;
+    font-size: 2rem;   
+  }
 

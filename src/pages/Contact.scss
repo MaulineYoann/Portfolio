@@ -1,5 +1,6 @@
 .Contact {
     background-color: var(--mainColor);
+    padding-bottom: 50px;
     .title {
         text-align: center;
         padding: 70px;
@@ -21,15 +22,12 @@
         
         .contain-icons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        height: 100px;
-        max-width: 330px;
-        min-width: 150px;
         margin: 30px;
-        
+        padding: 10px;
     }
     .icons {
         text-align: center;
@@ -38,12 +36,17 @@
     .liens {
         font-size: 1.7rem; 
         text-align: center;
-        padding-top:10px ;
+        // padding-top:10px ;
     }  
 
     }
     a {
         text-decoration: none;
+    }
+    .mail {
+        font-size: 1.8rem;
+        color: #d10000;
+        padding-left: 15px;
     }
     
     

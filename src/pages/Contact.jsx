@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss'
 import { FaLinkedin } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+// import { FiMail } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 
 
@@ -10,23 +10,24 @@ const Contact = () => {
     return (
       <section className='Contact' id='contact'>
         <h2 className='title'>Contact</h2>
-        <p className='contact-info'>Si vous désirez plus d'information je vous invite a me contacter</p>
+        <p className='contact-info'>
+          {' '}
+          Mes différents réseaux afin de me contacter
+        </p>
         {/* <FaPhone /> */}
         <aside className='contain-contact'>
-          <a href='mailto:maulineyoann@gmail.com'>
+          {/* <a href='mailto:maulineyoann@gmail.com'>
             <div className='contain-icons'>
               <FiMail className='icons' />
-              <p className='liens'>maulineyoann@gmail.com</p>
             </div>
-          </a>
+          </a> */}
           <a
             href='https://www.linkedin.com/in/yoann-mauline/'
             target='_blank'
             rel='noopener noreferrer'
           >
             <div className='contain-icons'>
-                        <FaLinkedin className='icons' />
-                        <p className='liens'>Linkedin</p>
+              <FaLinkedin className='icons' />
             </div>
           </a>
           <a
@@ -36,10 +37,10 @@ const Contact = () => {
           >
             <div className='contain-icons'>
               <FaGithub className='icons' />
-              <p className='liens'>Github</p>
             </div>
           </a>
         </aside>
+        <p>ou par mail : <span className='mail'>maulineyoann@gmail.com</span></p>
       </section>
     );
 }
