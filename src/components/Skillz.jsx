@@ -37,14 +37,14 @@ const Skillz = () => {
                 ))}
 
             </aside>
-            <h2 className="title">En cours d'apprentisage </h2>
+            {/* <h2 className="title">En cours d'apprentisage </h2>
             <aside className='skill-contain'>
             {learning.map((learn, index) => (
                 <div key={index}>
                     <Learn learn={learn}/>
                 </div>
             ))}
-            </aside>
+            </aside> */}
             
         </section>
     )
